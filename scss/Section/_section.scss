@@ -1,0 +1,54 @@
+@use "../Article/" as a;
+
+
+
+.section_container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+
+.section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 145px;
+  margin-bottom: 95px;
+
+  #{&}__icons {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    
+    width: 626px;
+    
+
+    &_contain {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-inline: 60px;
+      width: 100%;
+      margin-top: 60px;
+
+      & span {
+        margin-top: 15px;
+      }
+    }
+  }
+  #{&}__image {
+    margin-inline: 166px 129px;
+  }
+}
+
+.article--section {
+  margin-top: 90px;
+  margin-inline: 236px;
+  text-align: center;
+  font-family: Inter;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 32px;
+  text-align: center;
+}

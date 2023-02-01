@@ -1,0 +1,86 @@
+@use "../Article/" as a;
+@use "../boilerplate" as b;
+@use "../Home/" as h;
+
+.banner2 {
+  height: 288px;
+  position: relative;
+  width: 1275px;
+  margin-top: 190px;
+  background: #19b885;
+  color: white;
+  margin-inline: 82px;
+  text-align: center;
+
+  & p {
+    font-family: Inter;
+    font-size: 14px;
+    font-weight: 200;
+    line-height: 17px;
+    letter-spacing: 0px;
+    text-align: center;
+
+    & span {
+      font-size: 14px;
+      font-weight: 400;
+    }
+  }
+
+  #{&}__text {
+    margin-top: 15px;
+    font-family: Inter;
+    font-size: 12px;
+    font-weight: 300;
+    line-height: 14px;
+    word-spacing: 3px;
+    text-align: center;
+    & span {
+      font-size: 14px;
+      font-weight: 600;
+    }
+  }
+
+  #{&}__heading {
+    padding: 70px 205px 25px 227px;
+    font-size: 28px;
+  }
+
+  #{&}__inputs {
+    display: flex;
+    height: 56px;
+    width: 505px;
+    margin-inline: 385px;
+
+    margin-bottom: 12px;
+    &_input {
+      height: 56px;
+      font-family: Inter;
+      font-size: 18px;
+      font-weight: 300;
+      line-height: 19px;
+      letter-spacing: 0.15px;
+      border: 1px solid #bdbdbd;
+      border-top-right-radius: 0;
+      border-bottom-right-radius: 0;
+      border-top-left-radius: 5px;
+      border-bottom-left-radius: 5px;
+      padding-left: 10px;
+      width: 310px;
+    }
+    &_button {
+      height: 56px;
+      width: 195px;
+      font-family: Inter;
+      font-size: 18px;
+      font-weight: 400;
+      line-height: 22px;
+      text-align: center;
+      border-top-right-radius: 5px;
+      border-bottom-right-radius: 5px;
+
+      background: black;
+      color: white;
+      border: none;
+    }
+  }
+}
